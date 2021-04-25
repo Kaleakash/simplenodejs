@@ -1,8 +1,6 @@
 let app = require("express")()
 
 app.get("/",(req,res)=> {
-	res.send("Welcome to App")
+	res.send("Welcome")
 })
-
-
-app.listen(9999,"running on port number 9999")
+app.listen(9999,()=>console.log("runnin on servrer on 9999"))
